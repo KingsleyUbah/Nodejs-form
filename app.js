@@ -58,7 +58,7 @@ app.post("/auth/register", (req, res) => {
             })
         } else if(password !== password_confirm) {
             return res.render('register', {
-                message: 'This email is already in use'
+                message: 'Password Didn\'t Match!'
             })
         }
 
